@@ -94,13 +94,13 @@ export function Commitment() {
             Talk is cheap. Revenue-sharing is expensive—for us.
           </p>
           <p className="text-lg text-text-secondary leading-relaxed">
-            When we commit to your growth, we&apos;re committing our time,
+            When we commit to your growth, we're committing our time,
             expertise, and upfront capital. We only succeed when your revenue
-            grows. We don&apos;t get paid for showing up. We get paid for
+            grows. We don't get paid for showing up. We get paid for
             results.
           </p>
           <p className="text-xl text-text-primary font-semibold">
-            That&apos;s not a sales pitch. That&apos;s alignment.
+            That's not a sales pitch. That's alignment.
           </p>
         </motion.div>
 

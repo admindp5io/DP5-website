@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Container } from '@/components/ui/Container'
 import { useInView } from '@/hooks/useInView'
+import { Mail, Linkedin } from 'lucide-react'
 
 /**
  * Footer Section
@@ -15,10 +16,14 @@ export function Footer() {
 
   const footerLinks = {
     navigate: [
-      { label: 'How We Work', href: '#how-it-works' },
-      { label: 'Growth Framework', href: '#framework' },
-      { label: 'Partner With Us', href: '#contact' },
-      { label: 'Contact', href: '#contact' },
+      { label: 'Home', href: '/' },
+      { label: 'How We Work', href: '/how-we-work' },
+      { label: 'Results', href: '/results' },
+      { label: 'About', href: '/about' },
+    ],
+    resources: [
+      { label: 'FAQ', href: '/faq' },
+      { label: 'Growth Assessment', href: '/checklist' },
     ],
     legal: [
       { label: 'Privacy Policy', href: '#' },
@@ -48,7 +53,7 @@ export function Footer() {
   return (
     <footer ref={ref} className="bg-bg-secondary border-t border-border">
       <Container className="py-16 md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Column 1: Brand */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -57,7 +62,7 @@ export function Footer() {
           >
             <h3 className="text-3xl font-semibold text-accent mb-4">DP5</h3>
             <p className="text-base text-text-secondary">
-              Accelerating Sustainable Growth
+              Growth partners with skin in the game
             </p>
           </motion.div>
 
@@ -75,7 +80,6 @@ export function Footer() {
                 <li key={index}>
                   <a
                     href={link.href}
-                    onClick={(e) => scrollToSection(e, link.href)}
                     className="text-text-secondary hover:text-accent transition-colors duration-200 text-base relative group"
                   >
                     {link.label}
@@ -86,17 +90,17 @@ export function Footer() {
             </ul>
           </motion.div>
 
-          {/* Column 3: Legal */}
+          {/* Column 3: Resources */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.15 }}
           >
             <h4 className="text-sm font-semibold text-text-primary uppercase tracking-wider mb-4">
-              Legal
+              Resources
             </h4>
             <ul className="space-y-3">
-              {footerLinks.legal.map((link, index) => (
+              {footerLinks.resources.map((link, index) => (
                 <li key={index}>
                   <a
                     href={link.href}
@@ -108,6 +112,49 @@ export function Footer() {
                 </li>
               ))}
             </ul>
+          </motion.div>
+
+          {/* Column 4: Contact */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <h4 className="text-sm font-semibold text-text-primary uppercase tracking-wider mb-4">
+              Get In Touch
+            </h4>
+            <div className="space-y-4">
+              <a
+                href="mailto:hello@dp5.com"
+                className="flex items-center gap-3 text-text-secondary hover:text-accent transition-colors duration-200"
+              >
+                <Mail className="w-5 h-5" />
+                <span className="text-base">hello@dp5.com</span>
+              </a>
+              <a
+                href="https://linkedin.com/company/dp5"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-text-secondary hover:text-accent transition-colors duration-200"
+              >
+                <Linkedin className="w-5 h-5" />
+                <span className="text-base">Follow on LinkedIn</span>
+              </a>
+              <div className="pt-4 border-t border-border">
+                <p className="text-sm text-text-tertiary mb-2">Legal</p>
+                <div className="space-y-2">
+                  {footerLinks.legal.map((link, index) => (
+                    <a
+                      key={index}
+                      href={link.href}
+                      className="block text-sm text-text-secondary hover:text-accent transition-colors duration-200"
+                    >
+                      {link.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
           </motion.div>
         </div>
 

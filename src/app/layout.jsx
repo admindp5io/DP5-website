@@ -4,13 +4,13 @@ import { CustomCursor } from '@/components/ui/CustomCursor'
 import { Header } from '@/components/ui/Header'
 
 export const metadata = {
-  title: 'DP5 - We Make You Grow | Sustainable Growth Partners',
-  description: 'DP5 partners with ambitious companies to achieve sustainable, measurable growth through revenue-sharing commitment. No fluff. Just results.',
-  keywords: ['growth partners', 'revenue share', 'sustainable growth', 'business growth', 'fractional CTO'],
+  title: 'DP5 - We Deliver Growth, Not Just Advice | Revenue-Share Growth Partners',
+  description: 'DP5 partners with B2B companies to drive sustainable, measurable growth. We fund experiments, execute weekly, and share upside—you only pay when revenue grows.',
+  keywords: ['growth partners', 'revenue share', 'sustainable growth', 'business growth', 'B2B growth', 'execution partners'],
   authors: [{ name: 'DP5' }],
   openGraph: {
-    title: 'DP5 - We Make You Grow',
-    description: 'Growth partners who only win when you win.',
+    title: 'DP5 - We Deliver Growth, Not Just Advice',
+    description: 'Revenue-share aligned growth partners with skin in the game.',
     url: 'https://dp5.com',
     siteName: 'DP5',
     locale: 'en_US',
@@ -18,8 +18,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DP5 - We Make You Grow',
-    description: 'Growth partners who only win when you win.',
+    title: 'DP5 - We Deliver Growth, Not Just Advice',
+    description: 'Revenue-share aligned growth partners with skin in the game.',
   },
   robots: {
     index: true,

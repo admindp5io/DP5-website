@@ -28,9 +28,9 @@ export function Difference() {
     },
     {
       icon: Shield,
-      title: 'Protected Partnership',
+      title: 'Aligned Partnership',
       description:
-        'Clear legal frameworks. Transparent weekly invoicing. Exit options at any milestone. You stay in control while we drive growth.',
+        'Clear legal frameworks. Transparent weekly invoicing. Flexible engagement terms that scale with your growth. You stay in control while we drive results.',
     },
   ]
 

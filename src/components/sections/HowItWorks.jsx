@@ -92,7 +92,7 @@ export function HowItWorks() {
             </h3>
             <p className="text-lg text-text-secondary leading-relaxed">
               Every week, you approve our next moves. Every invoice reflects
-              work you&apos;ve greenlit. Exit anytime with clear settlement
+              work you've greenlit. Exit anytime with clear settlement
               terms. No surprises. No games.
             </p>
           </Card>

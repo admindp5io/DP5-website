@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Mail } from 'lucide-react'
 import { Container } from './Container'
+import { Button } from './Button'
 import { cn } from '@/lib/utils'
 
 /**
@@ -19,28 +20,32 @@ export function Header() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20)
 
-      // Determine active section
-      const sections = navLinks.map(link => ({
-        id: link.href.substring(1), // Remove #
-        element: document.querySelector(link.href)
-      }))
+      // Only track active sections for anchor links (not page routes)
+      const anchorLinks = navLinks.filter(link => !link.external && link.href.startsWith('#'))
 
-      const scrollPosition = window.scrollY + 100 // Offset for header
+      if (anchorLinks.length > 0) {
+        const sections = anchorLinks.map(link => ({
+          id: link.href.substring(1), // Remove #
+          element: document.querySelector(link.href)
+        }))
 
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const section = sections[i]
-        if (section.element) {
-          const sectionTop = section.element.offsetTop
-          if (scrollPosition >= sectionTop) {
-            setActiveSection(section.id)
-            break
+        const scrollPosition = window.scrollY + 100 // Offset for header
+
+        for (let i = sections.length - 1; i >= 0; i--) {
+          const section = sections[i]
+          if (section.element) {
+            const sectionTop = section.element.offsetTop
+            if (scrollPosition >= sectionTop) {
+              setActiveSection(section.id)
+              break
+            }
           }
         }
-      }
 
-      // If at top of page, clear active section
-      if (window.scrollY < 100) {
-        setActiveSection('')
+        // If at top of page, clear active section
+        if (window.scrollY < 100) {
+          setActiveSection('')
+        }
       }
     }
 
@@ -50,11 +55,10 @@ export function Header() {
   }, [])
 
   const navLinks = [
-    { label: 'How It Works', href: '#how-it-works' },
-    { label: 'Framework', href: '#framework' },
-    { label: 'Services', href: '#services' },
-    { label: 'Revenue Model', href: '#revenue-model' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'How We Work', href: '/how-we-work', external: true },
+    { label: 'Results', href: '/results', external: true },
+    { label: 'About', href: '/about', external: true },
+    { label: 'FAQ', href: '/faq', external: true },
   ]
 
   const scrollToSection = (e, href) => {
@@ -87,11 +91,7 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault()
-              window.scrollTo({ top: 0, behavior: 'smooth' })
-            }}
+            href="/"
             className="flex items-center gap-3 group"
           >
             {/* Logo placeholder - USER SHOULD REPLACE THIS */}
@@ -99,33 +99,49 @@ export function Header() {
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
-            {navLinks.map((link, index) => {
-              const isActive = activeSection === link.href.substring(1)
-              return (
-                <a
-                  key={index}
-                  href={link.href}
-                  onClick={(e) => scrollToSection(e, link.href)}
-                  className={cn(
-                    'text-sm font-medium relative group transition-colors duration-200',
-                    isActive
-                      ? 'text-accent'
-                      : 'text-text-secondary hover:text-accent'
-                  )}
-                >
-                  {link.label}
-                  <span
-                    className={cn(
-                      'absolute -bottom-1 left-0 h-[2px] bg-accent transition-all duration-200',
-                      isActive
-                        ? 'w-full'
-                        : 'w-0 group-hover:w-full'
-                    )}
-                  />
-                </a>
-              )
-            })}
+          <nav className="hidden md:flex items-center gap-6">
+            {navLinks.map((link, index) => (
+              <a
+                key={index}
+                href={link.href}
+                onClick={link.external ? undefined : (e) => scrollToSection(e, link.href)}
+                className={cn(
+                  'text-sm font-medium relative group transition-colors duration-200',
+                  'text-text-secondary hover:text-accent'
+                )}
+              >
+                {link.label}
+                <span
+                  className="absolute -bottom-1 left-0 h-[2px] bg-accent transition-all duration-200 w-0 group-hover:w-full"
+                />
+              </a>
+            ))}
+
+            {/* CTA Button */}
+            <div className="pl-6 border-l border-border">
+              <Button
+                size="sm"
+                onClick={() => {
+                  // Navigate to home page contact section or scroll if already on home
+                  if (window.location.pathname === '/') {
+                    const contactSection = document.querySelector('#contact')
+                    if (contactSection) {
+                      const offset = 80
+                      const elementPosition = contactSection.getBoundingClientRect().top
+                      const offsetPosition = elementPosition + window.pageYOffset - offset
+                      window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                      })
+                    }
+                  } else {
+                    window.location.href = '/#contact'
+                  }
+                }}
+              >
+                Schedule Call
+              </Button>
+            </div>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -155,24 +171,44 @@ export function Header() {
           >
             <Container>
               <nav className="py-6 space-y-4">
-                {navLinks.map((link, index) => {
-                  const isActive = activeSection === link.href.substring(1)
-                  return (
-                    <a
-                      key={index}
-                      href={link.href}
-                      onClick={(e) => scrollToSection(e, link.href)}
-                      className={cn(
-                        'block text-base font-medium py-2 transition-colors duration-200',
-                        isActive
-                          ? 'text-accent border-l-2 border-accent pl-4'
-                          : 'text-text-secondary hover:text-accent'
-                      )}
-                    >
-                      {link.label}
-                    </a>
-                  )
-                })}
+                {navLinks.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link.href}
+                    onClick={link.external ? () => setIsMobileMenuOpen(false) : (e) => scrollToSection(e, link.href)}
+                    className={cn(
+                      'block text-base font-medium py-2 transition-colors duration-200',
+                      'text-text-secondary hover:text-accent'
+                    )}
+                  >
+                    {link.label}
+                  </a>
+                ))}
+                <div className="pt-4">
+                  <Button
+                    size="sm"
+                    className="w-full"
+                    onClick={() => {
+                      setIsMobileMenuOpen(false)
+                      if (window.location.pathname === '/') {
+                        const contactSection = document.querySelector('#contact')
+                        if (contactSection) {
+                          const offset = 80
+                          const elementPosition = contactSection.getBoundingClientRect().top
+                          const offsetPosition = elementPosition + window.pageYOffset - offset
+                          window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                          })
+                        }
+                      } else {
+                        window.location.href = '/#contact'
+                      }
+                    }}
+                  >
+                    Schedule Call
+                  </Button>
+                </div>
               </nav>
             </Container>
           </motion.div>

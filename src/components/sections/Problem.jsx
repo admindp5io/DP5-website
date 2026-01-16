@@ -38,21 +38,21 @@ export function Problem() {
             className="text-section-mobile sm:text-section-tablet lg:text-section-desktop font-semibold"
             variants={lineVariants}
           >
-            Growth consultants talk.
+            Your CAC increased 40% this year.
           </motion.h2>
 
           <motion.p
             className="text-xl sm:text-2xl lg:text-3xl font-light text-text-secondary"
             variants={lineVariants}
           >
-            You&apos;re still waiting for results.
+            Competitors are scaling. You're plateaued.
           </motion.p>
 
           <motion.p
             className="text-lg sm:text-xl text-text-secondary pt-8"
             variants={lineVariants}
           >
-            You&apos;ve heard it before. Growth strategies. Market positioning.
+            You've heard it before. Growth strategies. Market positioning.
             Digital transformation roadmaps. Beautiful presentations. Zero
             execution. Zero accountability.
           </motion.p>
@@ -61,9 +61,9 @@ export function Problem() {
             className="text-lg sm:text-xl text-text-secondary"
             variants={lineVariants}
           >
-            Meanwhile, your product has genuine potential. Your market is ready.
-            But nobody&apos;s willing to put skin in the game to prove their
-            advice actually works.
+            Meanwhile, you're stuck at the same revenue for 18 months. Your product
+            has genuine potential. Your market is ready. But nobody's willing to
+            put skin in the game to prove their advice actually works.
           </motion.p>
 
           <motion.p

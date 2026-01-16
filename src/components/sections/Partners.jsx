@@ -53,7 +53,7 @@ export function Partners() {
             variants={lineVariants}
           >
             DP5 works best with organizations that have genuine market potential
-            they haven&apos;t fully captured. Companies that want execution
+            they haven't fully captured. Companies that want execution
             partners, not advisors. Teams ready to make data-driven decisions
             quickly. Leaders who value transparency and shared success over
             traditional consulting theater.
@@ -72,10 +72,10 @@ export function Partners() {
             variants={lineVariants}
           >
             <p className="text-xl text-text-primary font-medium">
-              If you&apos;re growing but not fast enough, we can help.
+              If you're growing but not fast enough, we can help.
             </p>
             <p className="text-xl text-text-primary font-medium">
-              If you&apos;re stuck despite having a strong product, we can help.
+              If you're stuck despite having a strong product, we can help.
             </p>
             <p className="text-xl text-text-primary font-medium">
               If you need someone to actually execute, not just advise, we can

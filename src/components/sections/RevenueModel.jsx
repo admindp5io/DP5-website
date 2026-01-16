@@ -28,13 +28,13 @@ export function RevenueModel() {
       number: '03',
       title: 'Revenue Share',
       description:
-        'For growth initiatives we propose and execute, we participate in the upside. The exact terms depend on the engagement, but the principle stays the same: we win when you win.',
+        'For growth initiatives we propose and execute, we participate in the upside. Typically 10-20% of incremental revenue generated from our initiatives over 12-18 months, with transparent attribution tracking. Exact terms are negotiated based on engagement scope and market conditions.',
     },
     {
       number: '04',
-      title: 'Exit Strategy',
+      title: 'Flexible Terms',
       description:
-        'At any point, you can exit with clear settlement terms. You pay for committed work already in progress. No penalties. No pressure. Clean separation.',
+        'Partnership terms that evolve with your growth stage. Clear settlement terms if needed. You pay for committed work in progress. The goal: make the partnership so valuable you never want to leave, but so fair you always could.',
     },
     {
       number: '05',
@@ -92,7 +92,7 @@ export function RevenueModel() {
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            Before we start any work, we establish clear terms. Here&apos;s how
+            Before we start any work, we establish clear terms. Here's how
             it works in practice.
           </motion.p>
         </div>
@@ -136,8 +136,7 @@ export function RevenueModel() {
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, delay: 1 }}
         >
-          The goal is simple: make the partnership so valuable that you never
-          want to leave, but so fair that you always could.
+          Complete transparency. Aligned incentives. Measurable outcomes.
         </motion.p>
       </Container>
     </section>

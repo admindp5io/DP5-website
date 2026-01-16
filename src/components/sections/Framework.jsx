@@ -103,7 +103,7 @@ export function Framework() {
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            Growth isn&apos;t one-dimensional. Our proprietary framework
+            Growth isn't one-dimensional. Our proprietary framework
             addresses every lever that matters.
           </motion.p>
         </div>

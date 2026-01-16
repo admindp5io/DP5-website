@@ -62,7 +62,7 @@ export function Success() {
               className="text-lg sm:text-xl text-text-secondary leading-relaxed"
               variants={itemVariants}
             >
-              We&apos;re not chasing vanity metrics. We&apos;re building growth
+              We're not chasing vanity metrics. We're building growth
               engines.
             </motion.p>
 
@@ -71,8 +71,8 @@ export function Success() {
               variants={itemVariants}
             >
               Success means your revenue increases because of specific,
-              measurable initiatives we&apos;ve executed together. It means
-              you&apos;ve entered new markets with confidence because we
+              measurable initiatives we've executed together. It means
+              you've entered new markets with confidence because we
               validated them first. It means your product has features that
               customers actually want because we tested demand before building.
             </motion.p>
@@ -81,8 +81,8 @@ export function Success() {
               className="text-lg sm:text-xl text-text-secondary leading-relaxed"
               variants={itemVariants}
             >
-              Success means you have data-driven clarity on what&apos;s working
-              and what isn&apos;t. It means you&apos;re making faster, better
+              Success means you have data-driven clarity on what's working
+              and what isn't. It means you're making faster, better
               decisions because you have the right intelligence.
             </motion.p>
 
@@ -90,16 +90,16 @@ export function Success() {
               className="text-lg sm:text-xl text-text-primary font-semibold leading-relaxed"
               variants={itemVariants}
             >
-              And success means we&apos;ve built systems that continue
-              generating growth after our initial engagement ends. We&apos;re
-              not creating dependency. We&apos;re creating capability.
+              And success means we've built systems that continue
+              generating growth after our initial engagement ends. We're
+              not creating dependency. We're creating capability.
             </motion.p>
 
             <motion.p
               className="text-xl sm:text-2xl font-semibold pt-4"
               variants={itemVariants}
             >
-              By the end of the year, you&apos;ll have a portfolio of wins. Real
+              By the end of the year, you'll have a portfolio of wins. Real
               results you can point to. Revenue you can measure. Growth you can
               sustain.
             </motion.p>

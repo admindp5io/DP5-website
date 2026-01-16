@@ -227,7 +227,7 @@ export function ContactForm() {
             exit={{ opacity: 0 }}
           >
             <p className="text-success">
-              Thanks for reaching out! We&apos;ll be in touch within 24 hours.
+              Thanks for reaching out! We'll be in touch within 24 hours.
             </p>
           </motion.div>
         )}

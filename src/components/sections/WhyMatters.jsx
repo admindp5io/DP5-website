@@ -85,9 +85,9 @@ export function WhyMatters() {
             className="text-lg sm:text-xl text-text-secondary leading-relaxed"
             variants={lineVariants}
           >
-            This means we&apos;re ruthlessly focused on what actually drives
-            growth, not what sounds impressive in a presentation. We don&apos;t
-            have time for theater. We&apos;re betting real money on real
+            This means we're ruthlessly focused on what actually drives
+            growth, not what sounds impressive in a presentation. We don't
+            have time for theater. We're betting real money on real
             outcomes.
           </motion.p>
 
@@ -96,12 +96,12 @@ export function WhyMatters() {
             variants={lineVariants}
           >
             <p className="text-xl sm:text-2xl font-semibold mb-4">
-              When we tell you something will work, we&apos;re putting our own
+              When we tell you something will work, we're putting our own
               resources behind it.
             </p>
             <p className="text-lg text-text-secondary leading-relaxed">
               When we propose a new feature, market expansion, or operational
-              change, we&apos;ve already done the research to validate it&apos;s
+              change, we've already done the research to validate it's
               worth pursuing.
             </p>
           </motion.div>

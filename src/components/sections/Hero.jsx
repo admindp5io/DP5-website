@@ -140,25 +140,14 @@ export function Hero() {
         <div className="flex flex-col items-center text-center space-y-8 max-w-5xl mx-auto">
           {/* Main headline */}
           <motion.h1
-            className="text-3xl sm:text-4xl lg:text-5xl font-light"
+            className="text-hero-mobile sm:text-hero-tablet lg:text-hero-desktop font-semibold text-gradient"
             variants={textVariants}
             initial="hidden"
             animate="visible"
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            We don&apos;t give growth advice.
+            We deliver growth, not just advice.
           </motion.h1>
-
-          {/* Secondary headline */}
-          <motion.h2
-            className="text-hero-mobile sm:text-hero-tablet lg:text-hero-desktop font-semibold text-gradient"
-            variants={textVariants}
-            initial="hidden"
-            animate="visible"
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            We make you grow.
-          </motion.h2>
 
           {/* Subheadline */}
           <motion.p
@@ -166,15 +155,25 @@ export function Hero() {
             variants={textVariants}
             initial="hidden"
             animate="visible"
-            transition={{ duration: 0.6, delay: 0.6 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
           >
-            DP5 partners with ambitious companies to achieve sustainable,
-            measurable growth. No fluff. No empty strategies. Just real results
-            backed by revenue-sharing confidence.
+            We fund experiments, execute weekly, and share upside—you only pay when revenue grows.
           </motion.p>
 
-          {/* CTA Button */}
+          {/* Target customer */}
+          <motion.p
+            className="text-base sm:text-lg text-text-tertiary max-w-2xl"
+            variants={textVariants}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.6, delay: 0.6 }}
+          >
+            For $500K–$5M ARR B2B companies with product-market fit seeking predictable, scalable growth.
+          </motion.p>
+
+          {/* CTA Buttons */}
           <motion.div
+            className="flex flex-col sm:flex-row gap-4 items-center"
             variants={textVariants}
             initial="hidden"
             animate="visible"
@@ -197,9 +196,29 @@ export function Hero() {
                 }
               }}
             >
-              Start Growing Now
+              Schedule Free Growth Assessment
+            </Button>
+            <Button
+              size="lg"
+              variant="secondary"
+              onClick={() => {
+                window.location.href = '/checklist'
+              }}
+            >
+              Take Free Assessment
             </Button>
           </motion.div>
+
+          {/* Trust signal under CTA */}
+          <motion.p
+            className="text-sm text-text-tertiary"
+            variants={textVariants}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.6, delay: 1.0 }}
+          >
+            30 minutes, no obligation • Revenue-share aligned • Exit anytime
+          </motion.p>
         </div>
       </Container>
 

@@ -82,8 +82,8 @@ export function FinalCTA() {
             className="text-xl sm:text-2xl text-text-secondary mb-8"
             variants={itemVariants}
           >
-            If you&apos;re tired of consultants who talk big but never share the
-            risk, let&apos;s have a different conversation.
+            If you're tired of consultants who talk big but never share the
+            risk, let's have a different conversation.
           </motion.p>
 
           {/* Value proposition */}
@@ -92,9 +92,9 @@ export function FinalCTA() {
             variants={itemVariants}
           >
             <p className="text-lg sm:text-xl text-text-secondary">
-              We&apos;ll evaluate your opportunity honestly. If we see growth
-              potential, we&apos;ll show you exactly how we&apos;d unlock it.
-              And we&apos;ll put our money where our mouth is.
+              We'll evaluate your opportunity honestly. If we see growth
+              potential, we'll show you exactly how we'd unlock it.
+              And we'll put our money where our mouth is.
             </p>
             <p className="text-base text-text-tertiary">
               No obligation. No sales pressure. Just an honest assessment of
@@ -113,17 +113,16 @@ export function FinalCTA() {
                 magnetic
                 onClick={() => setShowForm(true)}
               >
-                Schedule Your Growth Evaluation
+                Book Your Strategy Call
               </Button>
               <Button
                 size="lg"
                 variant="secondary"
                 onClick={() => {
-                  // Scroll to top
-                  window.scrollTo({ top: 0, behavior: 'smooth' })
+                  window.location.href = '/checklist'
                 }}
               >
-                See How We&apos;re Different
+                Take Free Assessment
               </Button>
             </motion.div>
           )}

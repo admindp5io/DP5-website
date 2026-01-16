@@ -2,17 +2,14 @@ import { Hero } from '@/components/sections/Hero'
 import { Problem } from '@/components/sections/Problem'
 import { Difference } from '@/components/sections/Difference'
 import { HowItWorks } from '@/components/sections/HowItWorks'
-import { Framework } from '@/components/sections/Framework'
-import { Partners } from '@/components/sections/Partners'
-import { Services } from '@/components/sections/Services'
-import { Intelligence } from '@/components/sections/Intelligence'
-import { Commitment } from '@/components/sections/Commitment'
-import { RevenueModel } from '@/components/sections/RevenueModel'
-import { WhyMatters } from '@/components/sections/WhyMatters'
-import { Success } from '@/components/sections/Success'
+import { SocialProofMini } from '@/components/sections/SocialProofMini'
 import { FinalCTA } from '@/components/sections/FinalCTA'
 import { Footer } from '@/components/sections/Footer'
 
+/**
+ * Homepage - Streamlined Sales Funnel
+ * Goal: Convert visitors to schedule call or download checklist
+ */
 export default function HomePage() {
   return (
     <main className="min-h-screen">
@@ -20,14 +17,7 @@ export default function HomePage() {
       <Problem />
       <Difference />
       <HowItWorks />
-      <Framework />
-      <Partners />
-      <Services />
-      <Intelligence />
-      <Commitment />
-      <RevenueModel />
-      <WhyMatters />
-      <Success />
+      <SocialProofMini />
       <FinalCTA />
       <Footer />
     </main>
