@@ -131,13 +131,12 @@ export function SocialProofMini() {
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, delay: 0.7 }}
         >
-          <a
-            href="/results"
-            className="inline-flex items-center text-accent hover:text-accent/80 font-semibold transition-colors group"
+          <span
+            className="inline-flex items-center text-accent/40 font-semibold pointer-events-none"
           >
             See detailed case studies
             <svg
-              className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
+              className="w-5 h-5 ml-2"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -149,7 +148,7 @@ export function SocialProofMini() {
                 d="M9 5l7 7-7 7"
               />
             </svg>
-          </a>
+          </span>
         </motion.div>
       </Container>
     </section>

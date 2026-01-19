@@ -11,7 +11,7 @@ export const metadata = {
   openGraph: {
     title: 'DP5 - We Deliver Growth, Not Just Advice',
     description: 'Revenue-share aligned growth partners with skin in the game.',
-    url: 'https://dp5.com',
+    url: 'https://dp.io',
     siteName: 'DP5',
     locale: 'en_US',
     type: 'website',

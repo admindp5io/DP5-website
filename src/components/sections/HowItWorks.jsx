@@ -55,7 +55,9 @@ export function HowItWorks() {
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Four steps to sustainable growth.
+            We've seen what works at scale and what burns budgets with nothing to show. 
+            <br/>
+            Here's our four-step process to sustainable growth.
           </motion.p>
         </div>
 

@@ -46,6 +46,8 @@ export function Problem() {
             variants={lineVariants}
           >
             Competitors are scaling. You're plateaued.
+            <br />
+            <br />Companies are drowning in advice but starving for execution. <br />
           </motion.p>
 
           <motion.p
@@ -63,7 +65,7 @@ export function Problem() {
           >
             Meanwhile, you're stuck at the same revenue for 18 months. Your product
             has genuine potential. Your market is ready. But nobody's willing to
-            put skin in the game to prove their advice actually works.
+            invest in your success to prove that their advice actually works.
           </motion.p>
 
           <motion.p

@@ -82,8 +82,7 @@ export function FinalCTA() {
             className="text-xl sm:text-2xl text-text-secondary mb-8"
             variants={itemVariants}
           >
-            If you're tired of consultants who talk big but never share the
-            risk, let's have a different conversation.
+            If you're tired of consultants who sell certainty but avoid risk, let's have a different conversation..
           </motion.p>
 
           {/* Value proposition */}
@@ -94,7 +93,7 @@ export function FinalCTA() {
             <p className="text-lg sm:text-xl text-text-secondary">
               We'll evaluate your opportunity honestly. If we see growth
               potential, we'll show you exactly how we'd unlock it.
-              And we'll put our money where our mouth is.
+              And we'll back it with our own investment.
             </p>
             <p className="text-base text-text-tertiary">
               No obligation. No sales pressure. Just an honest assessment of

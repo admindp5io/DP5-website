@@ -157,6 +157,9 @@ export function Hero() {
             animate="visible"
             transition={{ duration: 0.6, delay: 0.4 }}
           >
+            At DP5, we bring enterprise-grade thinking to growth-stage companies who need execution, not just advice.
+            <br />
+            <br/>
             We fund experiments, execute weekly, and share upside—you only pay when revenue grows.
           </motion.p>
 

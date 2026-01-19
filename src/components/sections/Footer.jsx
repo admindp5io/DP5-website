@@ -18,7 +18,7 @@ export function Footer() {
     navigate: [
       { label: 'Home', href: '/' },
       { label: 'How We Work', href: '/how-we-work' },
-      { label: 'Results', href: '/results' },
+      // { label: 'Results', href: '/results' }, // DISABLED
       { label: 'About', href: '/about' },
     ],
     resources: [
@@ -26,8 +26,8 @@ export function Footer() {
       { label: 'Growth Assessment', href: '/checklist' },
     ],
     legal: [
-      { label: 'Privacy Policy', href: '#' },
-      { label: 'Terms of Service', href: '#' },
+      // { label: 'Privacy Policy', href: '#' }, // DISABLED
+      // { label: 'Terms of Service', href: '#' }, // DISABLED
     ],
   }
 
@@ -62,7 +62,7 @@ export function Footer() {
           >
             <h3 className="text-3xl font-semibold text-accent mb-4">DP5</h3>
             <p className="text-base text-text-secondary">
-              Growth partners with skin in the game
+              Growth partners invested in your success. We only win when you win.
             </p>
           </motion.div>
 
@@ -125,14 +125,14 @@ export function Footer() {
             </h4>
             <div className="space-y-4">
               <a
-                href="mailto:hello@dp5.com"
+                href="mailto:hello@dp.io"
                 className="flex items-center gap-3 text-text-secondary hover:text-accent transition-colors duration-200"
               >
                 <Mail className="w-5 h-5" />
-                <span className="text-base">hello@dp5.com</span>
+                <span className="text-base">hello@dp.io</span>
               </a>
               <a
-                href="https://linkedin.com/company/dp5"
+                href="https://linkedin.com/company/dp5-llc"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-text-secondary hover:text-accent transition-colors duration-200"

@@ -30,7 +30,7 @@ export function FAQ() {
     },
     {
       question: 'How is this different from traditional consulting?',
-      answer: 'Traditional consultants charge fees regardless of results and deliver strategy documents. We execute alongside you, fund the experiments ourselves, and only participate in revenue we actually generate. We have skin in the game. If our initiatives don\'t drive measurable growth, we don\'t get paid the revenue share.'
+      answer: 'Traditional consultants charge fees regardless of results and deliver strategy documents. We execute alongside you, fund the experiments ourselves, and only participate in revenue we actually generate. We are invested in your success. If our initiatives don\'t drive measurable growth, we don\'t get paid the revenue share.'
     },
     {
       question: 'What\'s the minimum engagement size?',

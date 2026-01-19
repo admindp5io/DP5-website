@@ -56,7 +56,7 @@ export function Difference() {
   }
 
   return (
-    <section ref={ref} className="section-padding bg-bg-primary">
+    <section ref={ref} className="section-padding pb-8 bg-bg-primary">
       <Container>
         {/* Intro text */}
         <div className="text-center max-w-4xl mx-auto mb-20">
@@ -88,37 +88,39 @@ export function Difference() {
           </motion.p>
         </div>
 
-        {/* Three Pillars Grid */}
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-8"
-          variants={containerVariants}
-          initial="hidden"
-          animate={inView ? 'visible' : 'hidden'}
-        >
-          {pillars.map((pillar, index) => {
-            const Icon = pillar.icon
-            return (
-              <motion.div key={index} variants={cardVariants}>
-                <Card className="h-full group cursor-pointer">
-                  <CardHeader>
-                    <motion.div
-                      whileHover={{ rotate: 5, scale: 1.1 }}
-                      transition={{ type: 'spring', stiffness: 300 }}
-                    >
-                      <Icon className="w-12 h-12 text-accent mb-6" />
-                    </motion.div>
-                    <CardTitle className="text-2xl mb-4">
-                      {pillar.title}
-                    </CardTitle>
-                    <CardDescription className="text-base leading-relaxed">
-                      {pillar.description}
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
-              </motion.div>
-            )
-          })}
-        </motion.div>
+        {/* Three Pillars Grid - DISABLED */}
+        {false && (
+          <motion.div
+            className="grid grid-cols-1 md:grid-cols-3 gap-8"
+            variants={containerVariants}
+            initial="hidden"
+            animate={inView ? 'visible' : 'hidden'}
+          >
+            {pillars.map((pillar, index) => {
+              const Icon = pillar.icon
+              return (
+                <motion.div key={index} variants={cardVariants}>
+                  <Card className="h-full group cursor-pointer">
+                    <CardHeader>
+                      <motion.div
+                        whileHover={{ rotate: 5, scale: 1.1 }}
+                        transition={{ type: 'spring', stiffness: 300 }}
+                      >
+                        <Icon className="w-12 h-12 text-accent mb-6" />
+                      </motion.div>
+                      <CardTitle className="text-2xl mb-4">
+                        {pillar.title}
+                      </CardTitle>
+                      <CardDescription className="text-base leading-relaxed">
+                        {pillar.description}
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+                </motion.div>
+              )
+            })}
+          </motion.div>
+        )}
       </Container>
     </section>
   )
