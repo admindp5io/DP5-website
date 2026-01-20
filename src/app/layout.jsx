@@ -10,8 +10,8 @@ export const metadata = {
   authors: [{ name: 'DP5' }],
   openGraph: {
     title: 'DP5 - We Deliver Growth, Not Just Advice',
-    description: 'Revenue-share aligned growth partners with skin in the game.',
-    url: 'https://dp.io',
+    description: 'Revenue-share aligned growth partners invested in your success. We only win when you win.',
+    url: 'https://dp5.io',
     siteName: 'DP5',
     locale: 'en_US',
     type: 'website',
@@ -19,7 +19,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'DP5 - We Deliver Growth, Not Just Advice',
-    description: 'Revenue-share aligned growth partners with skin in the game.',
+    description: 'Revenue-share aligned growth partners invested in your success. We only win when you win.',
   },
   robots: {
     index: true,

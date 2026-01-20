@@ -125,11 +125,11 @@ export function Footer() {
             </h4>
             <div className="space-y-4">
               <a
-                href="mailto:hello@dp.io"
+                href="mailto:hello@dp5.io"
                 className="flex items-center gap-3 text-text-secondary hover:text-accent transition-colors duration-200"
               >
                 <Mail className="w-5 h-5" />
-                <span className="text-base">hello@dp.io</span>
+                <span className="text-base">hello@dp5.io</span>
               </a>
               <a
                 href="https://linkedin.com/company/dp5-llc"

@@ -49,7 +49,7 @@ export default function AboutPage() {
                 This isn't consulting. It's partnership.
               </p>
               <p>
-                Our revenue-share model means we have real skin in the game. If our
+                Our revenue-share model means we are invested in your success. If our
                 initiatives don't drive growth, we don't get paid. This alignment
                 changes everything—it means we're hyper-focused on what actually
                 moves the needle, not what looks good in a presentation.
@@ -103,7 +103,7 @@ export default function AboutPage() {
               </div>
               <div className="glass rounded-2xl p-8 text-left">
                 <h3 className="text-2xl font-semibold mb-4 text-accent">
-                  Skin in the Game
+                  Invested in Your Success
                 </h3>
                 <p className="text-text-secondary">
                   Our revenue-share model means we invest our time and resources
