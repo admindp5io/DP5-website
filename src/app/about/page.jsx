@@ -12,7 +12,7 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen">
       {/* Page Hero */}
-      <section className="relative min-h-[60vh] flex items-center justify-center gradient-mesh">
+      {/* <section className="relative min-h-[60vh] flex items-center justify-center gradient-mesh">
         <Container className="relative z-10 text-center">
           <h1 className="text-hero-mobile sm:text-hero-tablet lg:text-hero-desktop font-semibold text-gradient mb-6">
             Who We Are
@@ -23,7 +23,7 @@ export default function AboutPage() {
             scaled companies ourselves.
           </p>
         </Container>
-      </section>
+      </section> */}
 
       {/* Mission/Story section */}
       <section className="section-padding bg-bg-primary">
@@ -69,13 +69,13 @@ export default function AboutPage() {
       </section>
 
       {/* Team section */}
-      <Team />
+      {/* <Team /> */}
 
       {/* Partners section */}
-      <Partners />
+      {/* <Partners /> */}
 
       {/* Values/Philosophy section */}
-      <section className="section-padding bg-bg-secondary">
+      {/* <section className="section-padding bg-bg-secondary">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-section-mobile sm:text-section-tablet lg:text-section-desktop font-semibold mb-12">
@@ -122,7 +122,7 @@ export default function AboutPage() {
             </div>
           </div>
         </Container>
-      </section>
+      </section> */}
 
       <FinalCTA />
       <Footer />

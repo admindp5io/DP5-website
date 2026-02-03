@@ -30,6 +30,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <script async src="https://cdn.now4real.com/now4real.js"></script>
       <body className="min-h-screen">
         <ScrollProgress />
         <CustomCursor />

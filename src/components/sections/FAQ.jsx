@@ -22,7 +22,7 @@ export function FAQ() {
     },
     {
       question: 'How much equity do you take?',
-      answer: 'We don\'t take equity. Our model is revenue-share based on the incremental growth we generate. Typically 10-20% of attributable revenue increases over 12-18 months. You keep 100% ownership of your company. We earn based on performance, not equity dilution.'
+      answer: 'Our model is revenue-share based on the incremental growth we generate.  We earn based on performance. Revenue share percentages vary by initiative type and risk level. There are no upfront fees or equity stakes requirements, unless you choose to. We are fully aligned with your success through measurable revenue growth.'
     },
     {
       question: 'What industries do you work with?',
@@ -46,7 +46,7 @@ export function FAQ() {
     },
     {
       question: 'Can we end the partnership if it\'s not working?',
-      answer: 'Absolutely. Our goal is to make the partnership so valuable you never want to leave, but so fair you always could. You can exit at any milestone with clear settlement terms. You pay for committed work in progress, but there are no penalties or lock-in clauses. We earn continued partnership through results, not contracts.'
+      answer: 'Absolutely. Our goal is to make the partnership so valuable you never want to leave, but so fair you always could. You can exit at any milestone with clear settlement terms. You pay for work approved by you and already completed until the time of termination. We aim to earn continued partnership through results, not contracts.'
     }
   ]
 
